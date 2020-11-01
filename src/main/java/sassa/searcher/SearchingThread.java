@@ -73,6 +73,7 @@ public class SearchingThread extends Thread implements Runnable{
                 randomSeed++;
                 Variables.updateCurrentSeed(randomSeed);
             } else {
+                System.out.println("mode");
                 if(sg.getBedrockMode().isSelected()){
                     randomSeed = new Random().nextInt();
                 } else {
@@ -89,7 +90,7 @@ public class SearchingThread extends Thread implements Runnable{
             ArrayList<Biome.Category> ci = new ArrayList<>(this.categoriesIN);
             ArrayList<Biome.Category> co  = new ArrayList<>(this.categoriesOUT);
 
-            if(si.size() != 0 && sg.getRandomSeed().isSelected()) {
+            if(si.size() != 0 && !sg.getRandomSeed().isSelected()) {
                 Searcher.searchRandomly(searchRadius, startSeedStructure, si, so, bi, bo, ci, co, Dimension.OVERWORLD, incrementer, 16);
                 break;
             } else {

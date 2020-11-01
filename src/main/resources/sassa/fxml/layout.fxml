@@ -91,6 +91,19 @@
                      </children>
                   </GridPane>
                </content></Tab>
+          <Tab text="Racing">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextstrokeType="OUTSIDE" strokeWidth="0.0" text="Race Category" wrappingWidth="80" />
+                        <CheckBox fx:id="anyseed" layoutX="0.0" layoutY="0.0" mnemonicParsing="false" selected="false" text="AnySeed"></CheckBox>
+                        <CheckBox fx:id="fortress" layoutX="0.0" layoutY="100.0" mnemonicParsing="false" selected="false" text="Fortress"></CheckBox>
+                        <CheckBox fx:id="village" layoutX="0.0" layoutY="200.0" mnemonicParsing="false" selected="false" text="Village"></CheckBox>
+                        <CheckBox fx:id="villageless" layoutX="0.0" layoutY="300.0" mnemonicParsing="false" selected="false" text="Villageless"></CheckBox>
+                        <CheckBox fx:id="bastion" layoutX="0.0" layoutY="400.0" mnemonicParsing="false" selected="false" text="Bastion"></CheckBox>
+                     </children>
+                  </Pane>
+               </content></Tab>
           <Tab text="Data">
                <content>
                   <Pane prefHeight="200.0" prefWidth="200.0">
@@ -286,7 +299,7 @@
          <center>
             <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="startBtn" layoutX="118.0" layoutY="2.0" mnemonicParsing="false" prefWidth="41.0" text="Start">
+                  <Button fx:id="startBtn" layoutX="118.0" layoutY="2.0" mnemonicParsing="false" prefWidth="51.0" text="Start">
                      <tooltip>
                         <Tooltip text="Start and Stop the seed searcher" />
                      </tooltip></Button>
